@@ -8,17 +8,19 @@ class Etudiant
 
 
 public:
- 
-	string getEtudiant();
-	void setEtudiant();
+
+	Etudiant();
+	Etudiant(string nomEtudiant, int noteSur20, int noteSur10);
+	string getNomEtudiant();
+	void setNomEtudiant();
 	int getNoteSur20();
 	void setNoteSur20();
-	int getnoteSur10();
+	int getNoteSur10();
 	void setNoteSur10();
 	float calculerMoyenne();
 
 private:
-	string etudiant;
-	int noteSur20;
-	int noteSur10;
+	string m_nomEtudiant;
+	int m_noteSur20;
+	int m_noteSur10;
 };
